@@ -1,0 +1,24 @@
+# Core ML & Data
+
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+joblib
+
+# MLOps
+mlflow
+prefect
+fastapi
+uvicorn
+evidently
+
+# Testing & Code Quality
+pytest
+pytest-cov
+pre-commit
+flake8
+black
+python-dotenv
+pydantic
