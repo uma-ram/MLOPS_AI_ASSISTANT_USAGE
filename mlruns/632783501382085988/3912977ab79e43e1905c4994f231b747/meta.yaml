@@ -1,0 +1,14 @@
+artifact_uri: file:///workspaces/MLOPS_AI_ASSISTANT_USAGE/mlruns/632783501382085988/3912977ab79e43e1905c4994f231b747/artifacts
+end_time: 1753394799559
+entry_point_name: ''
+experiment_id: '632783501382085988'
+lifecycle_stage: active
+run_id: 3912977ab79e43e1905c4994f231b747
+run_name: fortunate-chimp-101
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753394796902
+status: 4
+tags: []
+user_id: codespace
