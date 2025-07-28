@@ -10,7 +10,7 @@ from mlflow.tracking import MlflowClient
 # -----------------------------
 # Step 1: Configure MLflow backend (SQLite)
 # -----------------------------
-mlflow.set_tracking_uri("sqlite:///mlflow.db")
+mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("ai-assistant-satisfaction")
 
 # -----------------------------
