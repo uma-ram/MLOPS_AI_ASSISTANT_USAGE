@@ -1,0 +1,31 @@
+Step 1: Download and install the Anaconda distribution of Python
+
+wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
+bash Anaconda3-2022.05-Linux-x86_64.sh
+
+
+Step 2: Update existing packages
+
+sudo apt update
+
+conda create -n project-env python=3.9
+
+conda activate project-env
+
+To install all the packages
+pip install -r requirements.txt
+
+
+
+
+to start mlflow server
+mlflow server \
+  --backend-store-uri sqlite:///mlflow.db \
+  --default-artifact-root ./mlruns \
+  --host 0.0.0.0 \
+  --port 5000
+Experiment Tracking  and model registry in mlflow - Completed 
+1. start the mlflow server and then run this file for experiment tracking
+to run train_model.py
+python train_model.py
+PYTHONPATH=. python scripts/train_model.py
