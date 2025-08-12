@@ -6,6 +6,7 @@ numpy
 matplotlib
 seaborn
 joblib
+xgboost
 
 # MLOps
 mlflow

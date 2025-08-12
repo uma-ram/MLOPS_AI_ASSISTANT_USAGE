@@ -17,15 +17,26 @@ pip install -r requirements.txt
 
 
 
-
+*********experiment tracking****************
 to start mlflow server
 mlflow server \
   --backend-store-uri sqlite:///mlflow.db \
   --default-artifact-root ./mlruns \
   --host 0.0.0.0 \
   --port 5000
-Experiment Tracking  and model registry in mlflow - Completed 
+
 1. start the mlflow server and then run this file for experiment tracking
 to run train_model.py
 python train_model.py
 PYTHONPATH=. python scripts/train_model.py
+
+***********************************************
+
+
+
+
+1. Experiment Tracking  and model registry in mlflow - Completed 
+2. Orchestration - 
+3. Deployment
+4. Monitoring
+5. Testing , CI/CD
