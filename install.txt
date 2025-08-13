@@ -29,6 +29,8 @@ mlflow server \
 to run train_model.py
 python train_model.py
 PYTHONPATH=. python scripts/train_model.py
+python train_model.py
+PYTHONPATH=. python scripts/train_pipeline.py
 
 ***********************************************
 
@@ -40,3 +42,16 @@ PYTHONPATH=. python scripts/train_model.py
 3. Deployment
 4. Monitoring
 5. Testing , CI/CD
+
+start prefect cloud
+prefect cloud login
+in free plan, server less can be used which is managed-pool
+Create a managed work pool
+prefect work-pool create "managed-pool" --type prefect:managed
+
+
+prefect Deployment
+prefect deploy scripts/train_pipeline.py:train_pipeline \
+    --name "hourly-train-pipeline" \
+    --cron "0 * * * *" \
+    --pool "managed-pool"
