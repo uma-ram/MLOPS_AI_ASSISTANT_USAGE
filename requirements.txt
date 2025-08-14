@@ -1,4 +1,4 @@
-~# Core ML & Data
+# Core ML & Data
 
 scikit-learn
 pandas
